@@ -1,0 +1,37 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .title {
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .buttons {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            margin-left: 15px;
+        }
+    }
+
+    &.done {
+        opacity: 0.5;
+
+        .title {
+            text-decoration: line-through;
+        }
+    }
+}

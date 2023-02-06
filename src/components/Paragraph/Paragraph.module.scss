@@ -1,0 +1,17 @@
+.p {
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+
+    &.lg {
+        font-size: 20px;
+    }
+
+    &.md {
+        font-size: 16px;
+    }
+
+    &.sm {
+        font-size: 14px;
+    }
+}
